@@ -1,0 +1,50 @@
+@import '../../../styles/variaveis';
+
+.secao {
+  margin: 0 10%;
+}
+
+.descricao {
+  padding-top: 50px;
+
+  &__titulo {
+    font-size: 3em;
+    width: 45%;
+  }
+
+  &__textos {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+
+  &__textos:last-child {
+    color: $azul-claro;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .descricao {
+    &__titulo {
+      font-size: 2.3em;
+      width: 60%;
+    }
+
+    &__textos {
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .descricao {
+
+    &__titulo {
+      font-size: 2em;
+      width: 90%;
+    }
+
+    &__textos {
+      font-size: 1em;
+    }
+  }
+}
