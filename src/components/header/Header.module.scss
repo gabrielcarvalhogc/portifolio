@@ -1,0 +1,66 @@
+@import '../../styles/variaveis';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  margin: auto 0;
+  padding-right: 100px;
+
+  &__lista {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+
+  &__link {
+    color: $branco;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: $azul-claro;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    padding-right: 30px;
+
+    &__lista {
+      gap: 20px;
+    }
+
+    &__link {
+      font-size: 1em;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+
+    &__logo {
+      height: 80px;
+      margin: 0 auto;
+      width: 100px;
+    }
+  }
+
+  .container {
+    padding-right: 0;
+
+    &__lista {
+      gap: 0;
+      justify-content: space-around;
+    }
+
+    &__lista {
+      font-size: .9em;
+    }
+  }
+}
