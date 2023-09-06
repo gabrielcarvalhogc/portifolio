@@ -1,0 +1,13 @@
+@import './styles/variaveis';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $azul-escuro;
+  font-family: $fonte;
+  color: $branco;
+}
