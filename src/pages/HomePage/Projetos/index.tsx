@@ -1,43 +1,76 @@
-import imagemCodechella from '/projeto-codechella-r.png';
-import imagemCardapio from '/projeto-restaurante-r.png';
-import styles from './Projetos.module.scss';
+import React, { useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import projectsData from './cards.json'; // Importe os dados do arquivo JSON
 
+import styles from './Projetos.module.scss'; // Certifique-se de importar seus estilos
 
-export default function Projetos() {
+interface Project {
+  id: number;
+  img: string;
+  titulo: string;
+  descricao: string;
+}
+
+const Projetos: React.FC = () => {
+  const [showCard, setShowCard] = useState<boolean>(false);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  const controls = useAnimation();
+
+  const toggleCard = (item: Project) => {
+    setSelectedProject(item);
+    setShowCard(!showCard);
+
+    // Animação do card usando framer-motion
+    controls.start({
+      opacity: showCard ? 0 : 1,
+      scale: showCard ? 0 : 1,
+    });
+  };
+
+  const cards: Project[] = projectsData; // Use os dados do arquivo JSON
+
   return (
     <section className={styles.secao}>
       <h2 className={styles.secao__titulo}>Projetos</h2>
 
-      <div className={styles.projeto}>
-        <img 
-          src={imagemCodechella} 
-          alt="Festival de música codechella" 
-          className={styles.projeto__img}
-        />
+      {cards.map((item: Project) => (
+        <div className={styles.projeto} key={item.id}>
+          <img
+            src={item.img}
+            alt={item.titulo}
+            className={styles.projeto__img}
+          />
 
-        <div className={styles.projeto__container}>
-          <h3 className={styles.projeto__container__titulo}>Codechella</h3>
+          <div className={styles.projeto__container}>
+            <h3 className={styles.projeto__container__titulo}>{item.titulo}</h3>
 
-          <p className={styles.projeto__container__descricao}>O Codechella é um projeto que combina paixões como música, linguagens de programação e tecnologia. Neste festival virtual, você encontrará uma variedade de artistas e referências, criando uma experiência diversificada e divertida para os amantes da música e da tecnologia.</p>
+            <p className={styles.projeto__container__descricao}>{item.descricao}</p>
 
-          <button className={styles.projeto__container__botao}>Ver mais</button>
+            <button
+              className={styles.projeto__container__botao}
+              onClick={() => toggleCard(item)}
+            >
+              Ver mais
+            </button>
+          </div>
         </div>
-      </div>
+      ))}
 
-      <div className={styles.projeto}>
-        <img 
-          src={imagemCardapio} 
-          alt="Restaurante casa da massa" 
-          className={styles.projeto__img}
-        />
-        <div className={styles.projeto__container}>
-          <h3 className={styles.projeto__container__titulo}>Casa da massa</h3>
-
-          <p className={styles.projeto__container__descricao}>Bem-vindo ao Casa da massa, o seu refúgio gastronômico para uma autêntica experiência italiana. Situado em um charmoso e acolhedor ambiente, nosso restaurante é um pedaço da Itália no coração da cidade.</p>
-
-          <button className={styles.projeto__container__botao}>Ver mais</button>
-        </div>
-      </div>
+      {showCard && selectedProject && (
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={controls}
+          exit={{ opacity: 0, scale: 0 }}
+          transition={{ duration: 0.5 }}
+          className={`${styles.card} ${styles.cardVisible}`} // Adicione a classe cardVisible para mostrar o card
+        >
+          <h2>{selectedProject.titulo}</h2>
+          <p>{selectedProject.descricao}</p>
+        </motion.div>
+      )}
     </section>
-  )
-}
+  );
+};
+
+export default Projetos;

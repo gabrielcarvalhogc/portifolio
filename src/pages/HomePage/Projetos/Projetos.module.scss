@@ -48,6 +48,29 @@
   }
 }
 
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin: 16px;
+  transition: opacity 0.5s, transform 0.5s;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.cardVisible {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
 @media (min-width: 481px) and (max-width: 768px) {
   .projeto {
     align-items: center;

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "img": "/projeto-codechella-r.png",
+    "titulo": "Codechella",
+    "descricao": "O Codechella é um projeto que combina paixões como música, linguagens de programação e tecnologia. Neste festival virtual, você encontrará uma variedade de artistas e referências, criando uma experiência diversificada e divertida para os amantes da música e da tecnologia."
+  },
+  {
+    "id": 2,
+    "img": "/projeto-restaurante-r.png",
+    "titulo": "Casa da massa",
+    "descricao": "Bem-vindo ao Casa da massa, o seu refúgio gastronômico para uma autêntica experiência italiana. Situado em um charmoso e acolhedor ambiente, nosso restaurante é um pedaço da Itália no coração da cidade.."
+  }
+]
