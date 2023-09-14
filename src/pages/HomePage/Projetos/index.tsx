@@ -30,7 +30,7 @@ const Projetos = () => {
   };
 
   return (
-    <section className={styles.secao}>
+    <section className={styles.secao} id='projetos'>
       <h2 className={styles.secao__titulo}>Projetos</h2>
 
       {cards.map((item: Card) => (

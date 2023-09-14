@@ -24,7 +24,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className={styles.rodape}>
+    <footer className={styles.rodape} id='contato'>
 
       <div className={styles.rodape__container} onClick={() => copyToClipboard(celular, setCopiaTelefone)}>
         <img 

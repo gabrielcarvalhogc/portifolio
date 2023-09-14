@@ -23,7 +23,7 @@ export default function Apresentacao() {
           alt="" 
         />
 
-        <div className={styles.sobre__container}>
+        <div className={styles.sobre__container} id='sobreMim'>
           <h2 className={styles.sobre__container__titulo}>Sobre mim</h2>
           <p className={styles.sobre__container__apresentacao}>
             Olá, meu nome é Gabriel. Sou um jovem apaixonado por tecnologia e desenvolvimento.

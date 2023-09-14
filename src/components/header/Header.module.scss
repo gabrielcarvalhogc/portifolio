@@ -37,6 +37,10 @@
     &__link {
       font-size: 1em;
     }
+
+    &__link:hover {
+      color: $branco;
+    }
   }
 }
 
@@ -61,6 +65,10 @@
 
     &__lista {
       font-size: .9em;
+    }
+
+    &__link:hover {
+      color: $branco;
     }
   }
 }

@@ -13,16 +13,13 @@ export default function Header() {
       <nav className={styles.container}>
         <ul className={styles.container__lista}>
           <li className={styles.container__item}>
-            <a href="#" className={styles.container__link}>Home</a>
+            <a href="#sobreMim" className={styles.container__link} >Sobre mim</a>
           </li>
           <li className={styles.container__item}>
-            <a href="#" className={styles.container__link}>Sobre mim</a>
+            <a href="#projetos" className={styles.container__link}>Projetos</a>
           </li>
           <li className={styles.container__item}>
-            <a href="#" className={styles.container__link}>Projetos</a>
-          </li>
-          <li className={styles.container__item}>
-            <a href="#" className={styles.container__link}>Contato</a>
+            <a href="#contato" className={styles.container__link}>Contato</a>
           </li>
         </ul>
       </nav>

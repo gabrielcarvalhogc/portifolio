@@ -11,3 +11,7 @@ body {
   font-family: $fonte;
   color: $branco;
 }
+
+html {
+  scroll-behavior: smooth;
+}
