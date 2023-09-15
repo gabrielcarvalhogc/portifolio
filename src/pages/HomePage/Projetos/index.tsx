@@ -61,8 +61,8 @@ const Projetos = () => {
                 <p className={styles.card__info__paragrafo}>{item.recursos.tecnologia}</p>
                 <p className={styles.card__info__paragrafo}>{item.recursos.outros}</p>
                 <div className={styles.card__info__links}>
-                  <a href={item.botoes.projeto}>Ver Projeto</a>
-                  <a href={item.botoes.codigo}>Ver código</a>
+                  <a href={item.botoes.projeto} target='_blank'>Ver Projeto</a>
+                  <a href={item.botoes.codigo} target='_blank'>Ver código</a>
                 </div>
               </motion.div>
             )}

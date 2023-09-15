@@ -10,8 +10,8 @@
       "outros": "Design: O design e nomes foram feitos por terceiros, mas a página foi inteiramente implementada por mim."
     },
     "botoes": {
-      "projeto": "#",
-      "codigo": "#"
+      "projeto": "https://codechella-ivory.vercel.app/",
+      "codigo": "https://github.com/gabrielcarvalhogc/codechella"
     }
   },
   {
@@ -25,8 +25,8 @@
       "outros": "Bibliotecas: Para aprimorar a funcionalidade e a aparência,foram utilizadas as seguintes bibliotecas:react-dom,react-router-dom,classNames,react-icons"
     },
     "botoes": {
-      "projeto": "#",
-      "codigo": "#"
+      "projeto": "https://casa-da-massa.vercel.app/",
+      "codigo": "https://github.com/gabrielcarvalhogc/Cardapio"
     }
   }
 ]
