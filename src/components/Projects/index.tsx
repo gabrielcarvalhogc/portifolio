@@ -4,7 +4,7 @@ import { ProjectType } from '../../types/project-type';
 
 export default function Projects() {
   return (
-    <section className={styles.projects}>
+    <section className={styles.projects} id='projetos'>
       <h2>Projetos</h2>
 
       {ProjectsData.map(({description, id, img, links, title}: ProjectType) => (

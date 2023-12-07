@@ -16,6 +16,9 @@ export default function Header() {
             <a href="#sobreMim" className={styles.container__link} >Sobre mim</a>
           </li>
           <li className={styles.container__item}>
+            <a href="#experiencias" className={styles.container__link} >Experiências</a>
+          </li>
+          <li className={styles.container__item}>
             <a href="#projetos" className={styles.container__link}>Projetos</a>
           </li>
           <li className={styles.container__item}>
