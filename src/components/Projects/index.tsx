@@ -14,8 +14,8 @@ export default function Projects() {
             <h3>{title}</h3>
             <p>{description}</p>
             <div>
-              <a href={links.projectLink} className={styles.projeto}>Abrir projeto</a>
-              <a href={links.githubLink} className={styles.codigo}>Abrir código</a>
+              <a href={links.projectLink} className={styles.projeto} target='_blank'>Abrir projeto</a>
+              <a href={links.githubLink} className={styles.codigo} target='_blank'>Abrir código</a>
             </div>
           </div>
         </div>
