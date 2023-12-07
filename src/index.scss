@@ -1,4 +1,4 @@
-@import './styles/variaveis';
+@import './styles/variables';
 
 * {
   margin: 0;
@@ -7,9 +7,9 @@
 }
 
 body {
-  background-color: $azul-escuro;
-  font-family: $fonte;
-  color: $branco;
+  background-color: $dark-blue;
+  font-family: $font;
+  color: $white;
 }
 
 html {

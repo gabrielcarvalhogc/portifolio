@@ -1,0 +1,13 @@
+@import "../../styles/variables";
+
+.homePage {
+  margin: 0 10%;
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    margin: 0 5%;
+  }
+
+  @media (max-width: 480px) {
+    margin: 0 20px;
+  }
+}
