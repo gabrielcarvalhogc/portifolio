@@ -1,7 +1,7 @@
 import styles from './Experiences.module.scss';
 import { tecnologiesLogos } from '../../data/tecnologies-logo';
 
-export function Experiences() {
+export default function Experiences() {
   return (
     <div className={styles.experiences}>
       <h2>Experiências</h2>

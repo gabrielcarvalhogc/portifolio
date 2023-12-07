@@ -1,14 +1,14 @@
-@import '../../styles/variaveis';
+@import '../../styles/variables';
 
 .rodape {
-  background-color: $roxo;
+  background-color: $purple;
   border-radius: 32px 32px 0 0 ;
   display: flex;
   justify-content: space-around;
   padding: 30px 0;
 
   &__container {
-    color: $branco;
+    color: $white;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
