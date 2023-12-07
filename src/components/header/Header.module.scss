@@ -1,4 +1,4 @@
-@import '../../styles/variaveis';
+@import '../../styles/variables';
 
 .header {
   display: flex;
@@ -16,13 +16,13 @@
   }
 
   &__link {
-    color: $branco;
+    color: $white;
     font-size: 1.2em;
     text-decoration: none;
   }
 
   &__link:hover {
-    color: $azul-claro;
+    color: $light-blue;
   }
 }
 
@@ -39,7 +39,7 @@
     }
 
     &__link:hover {
-      color: $branco;
+      color: $white;
     }
   }
 }
@@ -68,7 +68,7 @@
     }
 
     &__link:hover {
-      color: $branco;
+      color: $white;
     }
   }
 }
