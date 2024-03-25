@@ -1,3 +1,4 @@
+import { ReactTyped } from 'react-typed';
 import styles from './Introduction.module.scss';
 import MinhaFoto from '/minha-foto.jpeg';
 
@@ -12,7 +13,11 @@ export default function Introduction() {
       <div className={styles.introduction__container}>
         <p>Olá, me chamo</p>
         <p>Gabriel Carvalho👋</p>
-        <span>Desenvolvedor Frontend</span>
+        <ReactTyped 
+          strings={["Desenvolvedor Frontend"]} 
+          typeSpeed={90}
+          startDelay={1500}
+        />
       </div>
     </div>
   )
