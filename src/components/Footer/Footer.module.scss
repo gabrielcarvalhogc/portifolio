@@ -7,24 +7,22 @@
   justify-content: space-around;
   padding: 30px 0;
 
-  &__container {
+  .container {
     color: $white;
-    cursor: pointer;
     text-align: center;
     text-decoration: none;
 
-    &__img {
-      height: 40px;
-      width: 40px;
-    }
-
-    &__info {
+    .info {
       min-width: 160px;
     }
 
   }
 
-  &__container:hover {
+  .container:last-child {
+    cursor: pointer;
+  }
+
+  .container:hover {
     scale: 1.1;
     transition: .4s;
   }
@@ -32,19 +30,15 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
   .rodape {
-    &__container {
-      &__img {
-        height: 30px;
-        width: 30px;
-      }
+    .container {
 
-      &__info {
+      .info {
         font-size: .8em;
         min-width: 140px;
       }
     }
 
-    &__container:hover {
+    .container:hover {
       scale: 1;
     }
   }
@@ -56,24 +50,19 @@
     flex-direction: column;
     gap: 15px;
 
-    &__container {
+    .container {
       align-items: center;
       display: flex;
       gap: 5px;
       padding-left: 20px;
 
-      &__img {
-        height: 30px;
-        width: 30px;
-      }
-
-      &__info {
+      .info {
         font-size: .7em;
         min-width: auto;
       }
     }
 
-    &__container:hover {
+    .container:hover {
       scale: 1;
     }
   }
