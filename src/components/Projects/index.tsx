@@ -1,21 +1,29 @@
 import { ProjectsData } from '../../data/projetcs-data';
 import styles from './Projects.module.scss';
 import { ProjectType } from '../../types/project-type';
+import LinkIcon from '@mui/icons-material/Link';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Projects() {
   return (
-    <section className={styles.projects} id='projetos'>
-      <h2>Projetos</h2>
+    <section className={styles.section} id='projetos'>
+      <h2 className={styles.title}>Projetos</h2>
 
       {ProjectsData.map(({description, id, img, links, title}: ProjectType) => (
-        <div key={id}>
+        <div key={id} className={styles.container}>
           <img src={img} alt="" />
-          <div>
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <div>
-              <a href={links.projectLink} className={styles.projeto} target='_blank'>Abrir projeto</a>
-              <a href={links.githubLink} className={styles.codigo} target='_blank'>Abrir código</a>
+          <div className={styles.projectInfo}>
+            <h3 className={styles.projectName}>{title}</h3>
+            <p className={styles.projectDescription}>{description}</p>
+            <div className={styles.projectLinks}>
+              <a href={links.projectLink} className={styles.projetoLink} target='_blank'>
+                <p>Projeto</p>
+                <LinkIcon/>
+              </a>
+              <a href={links.githubLink} className={styles.codigoLink} target='_blank'>
+                <p>Repositório</p>
+                <GitHubIcon/>
+              </a>
             </div>
           </div>
         </div>
