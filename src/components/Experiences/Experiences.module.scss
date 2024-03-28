@@ -15,20 +15,13 @@
     text-align: center;
   }
 
-  div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-
+  .slider {
+    width: 100px;
+    margin: 0 auto;
+    
     img {
       height: 100px;
-      transition: transform 0.3s ease;
-      width: 100px;
-    }
-
-    img:hover {
-      transform: scale(1.1);
+      max-width: 100px;
     }
   }
 }
