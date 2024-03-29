@@ -9,12 +9,17 @@ export default function Projects() {
     <section className={styles.section} id='projetos'>
       <h2 className={styles.title}>Projetos</h2>
 
-      {ProjectsData.map(({description, id, img, links, title}: ProjectType) => (
+      {ProjectsData.map(({description, id, img, links, title, tecnologias}: ProjectType) => (
         <div key={id} className={styles.container}>
           <img src={img} alt="" />
           <div className={styles.projectInfo}>
             <h3 className={styles.projectName}>{title}</h3>
             <p className={styles.projectDescription}>{description}</p>
+            <div className={styles.tecnologies}>{
+              tecnologias.map((item, index) => (
+                <span key={index}>{item}</span>)
+              )}
+            </div>
             <div className={styles.projectLinks}>
               <a href={links.projectLink} className={styles.projetoLink} target='_blank'>
                 <p>Projeto</p>

@@ -3,7 +3,8 @@ export const ProjectsData = [
     id: 1,
     img: "/thumb-capputeeno.png",
     title: "Capputeeno",
-    description: "Este projeto de e-commerce, desenvolvido com Next.js e React usando TypeScript e Styled Components,se aproveita do consumo de uma API GraphQL para fornecer dados dinâmicos. A experiência de compra é aprimorada pela integração direta com essa API, garantindo informações atualizadas e uma jornada de compra mais fluida e personalizada.",
+    description: "Este projeto de e-commerce, se aproveita do consumo de uma API GraphQL para fornecer dados dinâmicos e uma experiência de compra aprimorada pela integração direta com essa API.",
+    tecnologias: ["Next.js","React","TypeScript","Styled Components",],
     links: {
       projectLink: "https://capputeeno-omega.vercel.app/",
       githubLink: "https://github.com/gabrielcarvalhogc/capputeeno"
@@ -11,19 +12,33 @@ export const ProjectsData = [
   },
   {
     id: 2,
+    img: "/thumb-mercado-pratico.png",
+    title: "Mercado Pratico",
+    description: "Uma aplicação React simplifica a compra de supermercado online, oferecendo uma interface intuitiva para navegar, com recursos de pesquisa e categorização, os usuários desfrutam de uma experiência personalizada e intuitiva.",
+    tecnologias: ["React","Typescript", "NextJS", "react-dom", "SASS", "UI Material"]
+    ,
+    links: {
+      projectLink: "https://mercado-pratico.vercel.app/",
+      githubLink: "https://github.com/gabrielcarvalhogc/mercado-pratico"
+    }
+  },
+  {
+    id: 3,
     img: "/thumb-casa-da-massa.png",
     title: "Casa da massa",
-    description: "Este projeto, desenvolvido com Vite, React (utilizando TypeScript e SASS), concentra-se principalmente no uso das bibliotecas react-dom e react-router-dom para a criação e gestão de rotas. A combinação dessas poderosas ferramentas permite uma navegação fluida e dinâmica dentro da aplicação. Além de aprimorar a funcionalidade e a aparência, a utilização estratégica dessas bibliotecas proporciona uma experiência de usuário altamente interativa.",
+    description: "Este projeto simula uma experiência completa na escolha da sua refeição em um restaurante de forma simples e intuitiva.",
+    tecnologias: ["Vite", "React", "TypeScript", "SASS","react-dom", "react-router-dom"],
     links: {
       projectLink: "https://casa-da-massa.vercel.app/",
       githubLink: "https://github.com/gabrielcarvalhogc/Cardapio"
     }
   },
   {
-    id: 3,
+    id: 4,
     img: "/thumb-sneakers-store.png",
     title: "Sneakers Store",
-    description: "Este projeto de e-commerce, desenvolvido com Next.js, React (usando TypeScript e SCSS Module), prioriza o uso de testes unitários. Com o auxílio das bibliotecas Jest e Testing Library, cada componente e funcionalidade é cuidadosamente testado, assegurando a confiabilidade e a consistência do código.",
+    description: "Este projeto de e-commerce, prioriza o uso de testes, cada componente e funcionalidade é cuidadosamente testado, assegurando a confiabilidade e a consistência do código.",
+    tecnologias: ["Next.js","React","SCSS Module","TypeScript","testes unitários","Jest","Testing Library"],
     links: {
       projectLink: "https://sneakers-ecommerce-sand.vercel.app/",
       githubLink: "https://github.com/gabrielcarvalhogc/sneakers-ecommerce"
