@@ -37,6 +37,20 @@
         line-height: 1.5;
       }
 
+      .tecnologies {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        span {
+          background-color: $purple;
+          border-radius: 4px;
+          padding: 5px;
+        }
+      }
+
       .projectLinks {
         display: flex;
         justify-content: space-around;
