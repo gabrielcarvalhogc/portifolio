@@ -6,7 +6,6 @@ export const ProjectsData = [
     description: "Este projeto de e-commerce, se aproveita do consumo de uma API GraphQL para fornecer dados dinâmicos e uma experiência de compra aprimorada pela integração direta com essa API.",
     tecnologias: ["Next.js","React","TypeScript","Styled Components",],
     links: {
-      projectLink: "https://capputeeno-omega.vercel.app/",
       githubLink: "https://github.com/gabrielcarvalhogc/capputeeno"
     }
   },

@@ -21,7 +21,7 @@ export default function Projects() {
               )}
             </div>
             <div className={styles.projectLinks}>
-              <a href={links.projectLink} className={styles.projetoLink} target='_blank'>
+              <a href={links.projectLink} className={links.projectLink ? styles.projetoLink : styles.undefined} target='_blank'>
                 <p>Projeto</p>
                 <LinkIcon/>
               </a>

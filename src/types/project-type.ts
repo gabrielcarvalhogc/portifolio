@@ -5,7 +5,7 @@ export interface ProjectType {
   description: string;
   tecnologias: string[];
   links: {
-    projectLink: string;
+    projectLink?: string;
     githubLink: string;
   }
 }
