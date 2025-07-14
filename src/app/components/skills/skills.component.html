@@ -1,0 +1,67 @@
+<div class="hard-skills-container">
+  <div class="hard-skills-content">
+    <h1>Hard Skills</h1>
+    <div class="divider"></div>
+    <p>
+      Desenvolvedor com experiência em desenvolvimento Front-end e Back-end. Proficiente em Java, Spring boot, Angular e Typescript. Experiência em implementação de APIs REST, Banco de dados, design responsivo e implementação de testes unitários e coverage.
+    escaláveis e de alta qualidade. Estou sempre animado para discutir projetos e ideias inovadoras. Vamos construir algo incrível juntos!
+    </p>
+  </div>
+  <div class="hard-skills-list">
+    @for (skill of skills; track $index) {
+      <div class="skill">
+        <img [src]="skill.image" [alt]="skill.name" />
+        <p>{{ skill.name }}</p>
+      </div>
+    }
+  </div>
+</div>
+<div class="soft-skills-container">
+  <h1>Soft Skills</h1>
+  <div class="divider"></div>
+  <p class="soft-skills-description">
+    Desde o início da minha jornada como desenvolvedor, venho aprimorando minhas soft skills,
+    sempre buscando ser um profissional melhor.
+  </p>
+  <div class="soft-skills-content">
+
+    <div class="soft-skills-item">
+      <div class="soft-skills-item-number">
+        <span>01</span>
+        <div class="bar"></div>
+      </div>
+      <p class="soft-skills-subtitle">Aprendizado contínuo</p>
+      <p class="soft-skills-text">
+        A tecnologia nunca para de se atualizar,
+        por isso, aqueles que trabalham com
+        tecnologia também não devem parar
+        de se atualizar.
+      </p>
+    </div>
+
+    <div class="soft-skills-item">
+      <div class="soft-skills-item-number">
+        <span>02</span>
+        <div class="bar"></div>
+      </div>
+      <p class="soft-skills-subtitle">Comunicativo</p>
+      <p class="soft-skills-text">
+        Não importa a sua profissão, a comunicação é
+        sempre uma necessidade em qualquer área.
+      </p>
+    </div>
+
+    <div class="soft-skills-item">
+      <div class="soft-skills-item-number">
+        <span>03</span>
+        <div class="bar"></div>
+      </div>
+      <p class="soft-skills-subtitle">Mente aberta</p>
+      <p class="soft-skills-text">
+        Quando você trabalha com pessoas, precisa
+        aceitar novas ideias de clientes ou membros
+        da equipe e ser capaz de trabalhar com elas.
+      </p>
+    </div>
+  </div>
+</div>

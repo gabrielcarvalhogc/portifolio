@@ -27,7 +27,8 @@ export const MyPreset = definePreset(Aura, {
         custom: {
           primaryCustom: '{cyan.500}',
           secondaryCustom: '{emerald.300}',
-          boxShadow: '{emerald.200}'
+          boxShadow: '{emerald.200}',
+          skillsBackground: '{teal.100}',
         },
       },
       dark: {
@@ -53,7 +54,8 @@ export const MyPreset = definePreset(Aura, {
         custom: {
           primaryCustom: '{violet.950}',
           secondaryCustom: '{violet.800}',
-          boxShadow: '{indigo.950}'
+          boxShadow: '{indigo.950}',
+          skillsBackground: '{slate.900}',
         },
       },
     },
