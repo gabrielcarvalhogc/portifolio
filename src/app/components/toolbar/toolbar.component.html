@@ -1,0 +1,30 @@
+<p-toolbar>
+  <div class="p-toolbar-group-start">
+    <h1>&lt;GC/&gt;</h1>
+  </div>
+
+  <div class="p-toolbar-group-end">
+    <div class="desktop-menu">
+      <ul class="desktop-nav-list">
+        <li>Início</li>
+        <li>Sobre</li>
+        <li>Projetos</li>
+        <li>Contato</li>
+      </ul>
+      <p-button
+        [icon]="isDarkMode ? 'pi pi-moon' : 'pi pi-sun'"
+        size="large"
+        (onClick)="toggleDarkMode()"
+      />
+    </div>
+
+    <div class="mobile-menu">
+      <p-menu #menu [model]="items" [popup]="true" [appendTo]="'body'" />
+      <p-button
+        icon="pi pi-bars"
+        (onClick)="menu.toggle($event)"
+        size="large"
+      />
+    </div>
+  </div>
+</p-toolbar>
