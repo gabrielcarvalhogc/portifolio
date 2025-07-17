@@ -1,0 +1,25 @@
+<section pAnimateOnScroll enterClass="animate-fadein" leaveClass="animate-fadeout">
+  <h1>Projetos</h1>
+
+  @for (project of projects; track $index) {
+  <div class="project-container">
+    <div class="project-info">
+      <h2 class="project-name">{{project.title}}</h2>
+      <div class="project-description">
+        <p>{{project.description}}</p>
+      </div>
+      <div class="project-links">
+        <a [href]="project.link[0].url" class="project-link p-button" target="_blank">
+          <i [class]="project.link[0].icon"></i>
+        </a>
+        <a [href]="project.link[1].url" class="project-link p-button" target="_blank">
+          <i [class]="project.link[1].icon"></i>
+        </a>
+      </div>
+    </div>
+    <figure>
+      <img [src]="project.imageUrl" alt="Exemplo com a tela inicial do projeto" class="project-image">
+    </figure>
+  </div>
+  }
+</section>

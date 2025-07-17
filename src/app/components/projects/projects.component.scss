@@ -1,0 +1,154 @@
+section {
+  padding: 20px 10%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 30px 0;
+  color: var(--p-custom-secondary-custom);
+}
+
+.project-container {
+  display: flex;
+  margin-bottom: 35px;
+
+  .project-info {
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .project-name {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .project-description {
+      background: linear-gradient(135deg, rgba(120, 120, 120, 0.2), rgba(89, 89, 89, 0.1));
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      width: calc(100% + 30px);
+      border-radius: 12px;
+      padding: 10px 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 2;
+
+      p {
+        margin: 0;
+      }
+    }
+
+
+    .project-links {
+      display: flex;
+      margin-top: 10px;
+      gap: 15px;
+
+      a {
+        border-radius: 50%;
+        padding: 12px;
+        text-decoration: none;
+      }
+    }
+
+  }
+
+  figure {
+    padding: 20px 0 0 20px;
+    border-radius: 8px 8px 0 8px;
+    width: 60%;
+    background-color: var(--p-custom-primary-custom);
+    box-shadow: 0 0 40px 20px var(--p-custom-box-shadow);
+    margin: 0;
+
+    img {
+      width: 480px;
+      display: block;
+    }
+  }
+}
+
+.project-container:nth-child(odd) {
+  flex-direction: row-reverse;
+  text-align: right;
+
+  .project-description {
+    right: 30px;
+  }
+
+  .project-links {
+    justify-content: flex-end;
+  }
+
+  figure {
+    border-radius: 8px 8px 8px 0;
+    padding: 20px 20px 0 0;
+
+    img {
+      display: block;
+    }
+  }
+}
+
+@media ((min-width: 900px) and (max-width:1100px)) {
+  section {
+    padding: 0 5%;
+  }
+
+  .project-container {
+
+    figure {
+      img {
+        width: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  section {
+    padding: 0 5%;
+
+    .project-container {
+      flex-direction: column;
+
+      .project-info {
+
+        .project-description {
+          width: 100%;
+        }
+      }
+      figure {
+        width: 70%;
+        padding: 10px;
+        border-radius: 8px;
+        margin: 10px auto;
+
+        img {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .project-container:nth-child(odd) {
+    flex-direction: column;
+
+    .project-info {
+      text-align: left;
+
+      .project-description {
+        width: 100%;
+        right: 0;
+      }
+
+      .project-links {
+        justify-content: start;
+      }
+    }
+  }
+}
