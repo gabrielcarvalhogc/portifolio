@@ -29,6 +29,7 @@ export const MyPreset = definePreset(Aura, {
           secondaryCustom: '{emerald.300}',
           boxShadow: '{emerald.200}',
           skillsBackground: '{teal.100}',
+          textColor: '{neutral.950}'
         },
       },
       dark: {
@@ -56,6 +57,7 @@ export const MyPreset = definePreset(Aura, {
           secondaryCustom: '{violet.800}',
           boxShadow: '{indigo.950}',
           skillsBackground: '{slate.900}',
+          textColor: '{neutral.50}'
         },
       },
     },
@@ -98,10 +100,13 @@ export const MyPreset = definePreset(Aura, {
             root: {
               background: '{custom.secondaryCustom}',
               borderRadius: '4px',
+              borderColor: '{custom.secondaryCustom}',
+              color: '{neutral.950}'
             },
             hover: {
-              background: '{emerald.400}'
-            }
+              background: '{emerald.400}',
+              color: '{neutral.600}'
+            },
           }
         },
         dark: {
@@ -109,9 +114,12 @@ export const MyPreset = definePreset(Aura, {
             root: {
               background: '{custom.secondaryCustom}',
               borderRadius: '4px',
+              borderColor: '{custom.secondaryCustom}',
+              color: '{neutral.50}'
             },
             hover: {
-              background: '{violet.600}'
+              background: '{violet.600}',
+              color: '{neutral.150}'
             }
           }
         },

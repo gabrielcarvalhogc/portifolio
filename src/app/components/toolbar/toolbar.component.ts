@@ -21,19 +21,22 @@ export class ToolbarComponent {
       {
         label: 'Início',
         icon: 'pi pi-home',
-        // command: () => this.navigateTo('/inicio') // Exemplo de navegação
+        url: '#inicio'
       },
       {
-        label: 'Sobre',
+        label: 'Skills',
         icon: 'pi pi-info-circle',
+        url: '#skills'
       },
       {
         label: 'Projetos',
         icon: 'pi pi-briefcase',
+        url: '#projetos'
       },
       {
         label: 'Contato',
         icon: 'pi pi-envelope',
+        url: '#contato'
       },
       {
         label: 'Tema',

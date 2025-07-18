@@ -17,6 +17,7 @@ h1 {
   justify-content: space-between;
 
   .hard-skills-content {
+    margin-top: 113px;
     width: 40%;
   }
 
@@ -25,6 +26,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    margin-top: 113px;
 
     .skill {
       background-color: var(--p-custom-skills-background);

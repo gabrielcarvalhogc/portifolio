@@ -1,3 +1,10 @@
+p-toolbar {
+  position: fixed;
+  display: block;
+  width: 100vw;
+  z-index: 5;
+}
+
 .desktop-menu {
   display: none;
 }
@@ -18,6 +25,10 @@
   font-size: 1.2em;
 }
 
+p-button {
+  margin: 0 1rem;
+}
+
 .desktop-nav-list li {
   cursor: pointer;
 }
@@ -26,6 +37,15 @@ h1 {
   margin: 0;
   padding-left: 10px;
   font-size: 2.3em;
+}
+
+a {
+  color: var(--p-custom-text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--p-primary-400);
 }
 
 @media (min-width: 768px) {
