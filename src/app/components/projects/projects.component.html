@@ -2,7 +2,9 @@
   <h1>Projetos</h1>
 
   @for (project of projects; track $index) {
-  <div class="project-container">
+  <div class="project-container"     pAnimateOnScroll
+    enterClass="animate-fadeleft"
+    leaveClass="animate-faderight">
     <div class="project-info">
       <h2 class="project-name">{{project.title}}</h2>
       <div class="project-description">

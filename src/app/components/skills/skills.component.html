@@ -1,5 +1,10 @@
 <div class="hard-skills-container">
-  <div class="hard-skills-content">
+  <div
+    class="hard-skills-content"
+    pAnimateOnScroll
+    enterClass="animate-faderight"
+    leaveClass="animate-fadeleft"
+  >
     <h1>Hard Skills</h1>
     <div class="divider"></div>
     <p>
@@ -7,7 +12,12 @@
     escaláveis e de alta qualidade. Estou sempre animado para discutir projetos e ideias inovadoras. Vamos construir algo incrível juntos!
     </p>
   </div>
-  <div class="hard-skills-list">
+  <div
+    class="hard-skills-list"
+    pAnimateOnScroll
+    enterClass="animate-fadeleft"
+    leaveClass="animate-faderight"
+  >
     @for (skill of skills; track $index) {
       <div class="skill">
         <img [src]="skill.image" [alt]="skill.name" />
@@ -16,7 +26,9 @@
     }
   </div>
 </div>
-<div class="soft-skills-container">
+<div
+  class="soft-skills-container"
+>
   <h1>Soft Skills</h1>
   <div class="divider"></div>
   <p class="soft-skills-description">
@@ -25,7 +37,12 @@
   </p>
   <div class="soft-skills-content">
 
-    <div class="soft-skills-item">
+    <div
+      class="soft-skills-item"
+      pAnimateOnScroll
+      enterClass="animate-faderight"
+      leaveClass="animate-fadeleft"
+    >
       <div class="soft-skills-item-number">
         <span>01</span>
         <div class="bar"></div>
@@ -39,7 +56,12 @@
       </p>
     </div>
 
-    <div class="soft-skills-item">
+    <div
+      class="soft-skills-item"
+      pAnimateOnScroll
+      enterClass="animate-fadein"
+      leaveClass="animate-fadeout"
+    >
       <div class="soft-skills-item-number">
         <span>02</span>
         <div class="bar"></div>
@@ -51,7 +73,12 @@
       </p>
     </div>
 
-    <div class="soft-skills-item">
+    <div
+      class="soft-skills-item"
+      pAnimateOnScroll
+      enterClass="animate-fadeleft"
+      leaveClass="animate-faderight"
+    >
       <div class="soft-skills-item-number">
         <span>03</span>
         <div class="bar"></div>

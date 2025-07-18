@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { DividerModule } from 'primeng/divider';
+import { AnimateOnScroll } from 'primeng/animateonscroll';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [DividerModule],
+  imports: [DividerModule, AnimateOnScroll],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })

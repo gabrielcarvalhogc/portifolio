@@ -1,11 +1,12 @@
 import { Project } from './model/projects';
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
+import { AnimateOnScroll } from 'primeng/animateonscroll';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CarouselModule],
+  imports: [CarouselModule, AnimateOnScroll],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
