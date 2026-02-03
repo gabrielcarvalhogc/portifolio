@@ -22,6 +22,15 @@ export class ProjectsComponent {
       imageUrl: '/projetos/fight-house.png',
     },
     {
+      title: 'Agilikey',
+      description: 'AgiliKey é uma aplicação web desenvolvida em Angular focada em treinar e aperfeiçoar habilidades de digitação. O projeto oferece uma experiência progressiva, guiando o usuário desde o conhecimento básico das teclas até a digitação de textos complexos com pontuação e acentuação.',
+      link: [
+        { icon: 'pi pi-github', url: 'https://github.com/gabrielcarvalhogc/agilikey' },
+        { icon: 'pi pi-link', url: 'https://agilikey.vercel.app/' },
+      ],
+      imageUrl: '/projetos/agilikey.png',
+    },
+    {
       title: 'New Courses',
       description: 'Uma API REST completa para gerenciamento de Cursos, construída com Java, Spring Boot e Angular. Utilizando boas práticas de mercado, o foco é demonstrar um ciclo de desenvolvimento profissional, cobrindo desde a modelagem de entidades,persistência e camada de serviço, até testes automatizados e integração contínua.',
       link: [
